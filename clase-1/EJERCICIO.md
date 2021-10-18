@@ -1,4 +1,4 @@
-# Ejercicios
+# Ejercicio
 
 ```
 1. crea una variable con tu nombre
