@@ -12,7 +12,7 @@
 [2,5,22,43124,32321,12,321312,10,1]
 ```
 
-3. Del partir del siguiente listado de usuarios mostrar en pantalla la cantidad de personas que amuenten la mayoría de edad y las que no:
+3. A partir del siguiente listado de usuarios mostrar en pantalla la cantidad de personas que amuenten la mayoría de edad y las que no:
 
 ```
 [
