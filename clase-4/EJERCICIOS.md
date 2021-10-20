@@ -3,7 +3,7 @@
 1. A partir del siguiente array, sumarlos y mostrar ese valor en pantalla:
 
 ```
-[10,20,55,321321,,4043,4341,0,312321,1]
+[10,20,55,321321,312,4043,4341,0,312321,1]
 ```
 
 2. Mostrar en pantalla el promedio del siguiente listado de numeros:
