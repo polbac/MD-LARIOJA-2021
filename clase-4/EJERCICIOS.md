@@ -1,6 +1,6 @@
 # Ejercicios
 
-1. A partir del siguiente array, sumar todos los element y mostrarla en pantalla:
+1. A partir del siguiente array, sumarlos y mostrar ese valor en pantalla:
 
 ```
 [10,20,55,321321,,4043,4341,0,312321,1]
