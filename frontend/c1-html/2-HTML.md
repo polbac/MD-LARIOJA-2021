@@ -2,7 +2,6 @@
 
 <img width="350" src="https://media.giphy.com/media/l3vRfNA1p0rvhMSvS/giphy.gif" />
 
-Tags, Estructura principal, partes del head y del body, live server, titulos, párrafo, imágen, hipervínculos internos y externos
 
 ## Introducción HTML
 
@@ -112,7 +111,7 @@ Veamos un ejemplo en código
     - main
     - section
     - article
-    - overlay
+    - footer
 
 
 ## Elementos HTML Docs Mozilla https://developer.mozilla.org/es/docs/Web/HTML/Element
