@@ -1,0 +1,32 @@
+/* Selector global */
+
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+/* Selectores de etiqueta */
+body {
+  font-family: "Roboto", sans-serif;
+}
+main {
+  width: 100%;
+}
+
+main h2 {
+  color: teal;
+}
+
+p.content {
+  font-size: 0.8rem;
+  width: 80%;
+  background-color: aliceblue;
+  border-radius: 4px;
+  padding: 8px 10px;
+  margin-left: 5px;
+  line-height: 1.5rem;
+}
+
+main .avatar {
+  margin-left: 50px;
+}
