@@ -1,0 +1,67 @@
+
+/* 
+    display
+        block: width, height y ocupa el 100%
+        inline: no width, no height se comporta como columnas
+        inline-block: width, height, se comporta como columnas
+*/
+
+html,body{
+    background: black;
+    margin: 0;
+    padding: 0;
+}
+
+.link{
+    color: yellow;
+    background: brown;
+    display: inline-block;
+    width: 25%;
+}
+
+.container{
+    width: 50%;
+    background: black;
+}
+
+.box{
+    background-color: red;
+    /* 
+    ancho y alto 
+    unidades absoluta: 
+        - px
+    unidades relativas:
+        - %
+    */
+    /* width: 50%; */
+    width: 25%;
+    display: inline-block;
+
+    box-sizing: border-box;
+
+    /* el margen exterior de una caja */
+    /* margin: 50px;  */
+    /* margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 200px; */
+
+    /* arriba derecha abajo izquierda */
+    /* margin: 10px 100px 50px 100px; */
+
+    /* margin interior */
+    /* padding: 100px; */
+    padding-top: 50px;
+    padding-left: 150px;
+
+    /* border: tamaño tipo-de-borde color */
+
+    /* border: 2px solid yellow; */
+
+    border-top: 10px solid yellow;
+    border-left: 10px solid green;
+    border-right: 10px solid yellow;
+    border-bottom: 10px solid green;
+
+    border: 2px solid yellow;
+
+}
