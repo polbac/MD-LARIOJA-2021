@@ -1,0 +1,40 @@
+# Funciones
+
+```
+function sumar(a, b) {
+    console.log(a + b)
+}
+```
+
+
+```
+const sumar = (a, b) => {
+    console.log(a + b)
+}
+```
+
+```
+const sumar = (a, b) => {
+    return a + b
+}
+```
+
+```
+// método
+const Person = {
+    sayHi() {
+        console.log('Hello')
+    }
+}
+
+```
+
+```
+// callback
+function ejecutarFuncion(callback, a, b) {
+
+}
+
+ejecutarFuncion(sumar, 1, 2)
+
+```

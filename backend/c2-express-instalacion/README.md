@@ -1,5 +1,7 @@
 # Instalación y configuración básica de Express
 
+<img src="https://media.giphy.com/media/IwTWTsUzmIicM/giphy.gif" width="300" />
+
 ## Instalacion
 
 ```
