@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    padding: 25px 0px 0px 25px;
+}
+
+div.button{
+    width: 200px;
+    border: none;
+    text-align: center;
+    padding: 5px;
+    background-color: rgb(120, 218, 120);
+    margin-left: 25px;
+}
+
+
+a.btn{
+    display: inline-block;
+    border: 2px solid blue;
+    padding: 25px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+@media (min-width: 800px) {
+    div.button{
+        width: 600px;
+        display: flex;
+    }
+}
