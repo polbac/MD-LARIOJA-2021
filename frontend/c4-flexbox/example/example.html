@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./example.css"/>
+    <title>Flexbox</title>
+</head>
+<body>
+    <section class="container">
+        flex-direction: column
+        <div class="flexbox-container flex-column">
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+        </div>
+    </section>
+    <section class="container">
+        justify-content: center
+        <div class="flexbox-container flex-center">
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+            <div class="boxes"></div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="flexbox-container">
+            <div class="boxes"></div>
+            <div class="boxes flex-grow">flex-grow</div>
+            <div class="boxes"></div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="flexbox-container basis">
+            <div class="boxes">basis 10%</div>
+            <div class="boxes">basis 70%</div>
+            <div class="boxes flex-end">align-self: flex-end</div>
+        </div>
+    </section>
+    <section class="container">
+        align-self
+        <div class="flexbox-container flex-column">
+            <div class="boxes align-center">center</div>
+            <div class="boxes align-start">start</div>
+            <div class="boxes align-end">end</div>
+        </div>
+    </section>
+</body>
+</html>
