@@ -13,7 +13,7 @@ body{
 }
 
 section.container{
-    width: 400px;
+    width: 500px;
     border: 1px solid blue;
 }
 
@@ -31,7 +31,11 @@ div.boxes{
 
 .flex-column {
     flex-direction: column;
+    /* eje cruzado */
     align-items: center;
+    /* eje principal */
+    justify-content: flex-end;
+    height: 250px;
 }
 
 .flex-column .boxes {
@@ -40,13 +44,13 @@ div.boxes{
 }
 
 .flex-center{
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .flex-grow {
     flex-grow: 1;
     display: flex;
-    align-items: center;
+/*     align-items: stretch; */
     justify-content: center;
     border-radius: 10px;
 }
@@ -57,12 +61,6 @@ div.basis .boxes:nth-child(1) {
 
 .basis .boxes:nth-child(2) {
     flex-basis: 70%;
-}
-
-.flex-end{
-    align-self: flex-start;
-    width: 60px;
-    height: 60px;
 }
 
 .align-end{
@@ -76,3 +74,8 @@ div.basis .boxes:nth-child(1) {
 .align-center{
     align-self: center;
 }
+
+.space{
+    justify-content: space-between;
+}
+
