@@ -1,0 +1,93 @@
+/* CSS  >> Cascade Style Sheet */
+
+/* * {
+html {
+  font-size: 20px
+}
+
+}
+ */
+
+/* selector elemento */
+body {
+  background-color: aliceblue;
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* selector clase */
+.miclase {
+  font-size: 20px;
+}
+
+/* selector id */
+#miId {
+  border: 1px solid black;
+  width: 50vw;
+  text-align: center;
+  margin: auto;
+  padding: 2px;
+}
+
+.padre {
+  width: 100%;
+  border: 1px solid rgba(255, 0, 255, 0.1);
+  border-radius: 4px;
+}
+
+body main section p {
+  color: violet;
+  opacity: 0.4;
+}
+
+p.parrafo {
+  font-size: 0.5rem;
+  line-height: 1;
+  width: 80%;
+}
+
+/* Nomenclatura BEM > Bloque Elemento Modificador */
+.Main__section_parrafo {
+  color: red;
+}
+
+div.button {
+  width: 20%;
+  margin: auto;
+}
+div.button button {
+  background-color: #e66a83;
+  border: none;
+  border-radius: 5px;
+  /*   padding: TOP RIGHT BOTTOM LEFT; */
+  /*   padding: TOP/BOTTOM RIGHT/LEFT; */
+  padding: 5px 15px;
+}
+
+.tortuga {
+  width: 300px;
+  height: auto;
+}
+
+.tortuga img {
+  border-radius: 15%;
+  width: 100%;
+  height: auto;
+}
+/* Medidas */
+/*
+  > px = pixeles 1/96 inch
+  > % = porcentaje
+  > vh = viewport height
+  > vw = viewport width
+  > em = relativa a font-size del padre
+  > rem = relativa a font-size del html (16px)
+*/
