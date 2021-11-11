@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Repaso CSS</title>
+</head>
+
+<body>
+  <!-- Box Model -->
+  <section class="">
+    <div class="outerBox">
+      Box Model
+      <div class="box-model">
+        <div class="paddingRef">padding</div>
+        <div class="content">content</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="title">
+    <h3>Box Sizing</h3>
+  </div>
+  <section class="">
+    <div class="outerBox mr-20">
+      Content Box
+      <div class="caja content-box">
+        Mi contenido quedara dentro porque el padding empuja para afuera
+      </div>
+    </div>
+    <div class="outerBox">
+      Border Box
+      <div class="caja border-box">
+        Mi contenido se saldra porque el padding empuja para adentro
+      </div>
+    </div>
+  </section class="">
+
+  <div class="title">
+    <h3>Tamaños</h3>
+  </div>
+  <section class="">
+    <div class="outerBox mr-20">
+      <div class="caja width-300">Width fijo 300px Width fijo 300pxWidth fijo 300pxWidth fijo 300pxWidth fijo 300px
+      </div>
+      <div class="caja min-width">min width 200px</div>
+      <div class="caja fit-content">width fit content (se adapta al contenido)</div>
+    </div>
+    <div class="outerBox">
+      <div class="caja height-300">Height fijo 300px</div>
+    </div>
+  </section>
+
+  <div class="title">
+    <h3>Media queries</h3>
+  </div>
+  <section class="">
+    <div class="outerBox mr-20 before-500px">
+      <div class="">Se muestra hasta 500px</div>
+    </div>
+    <div class="outerBox mr-20 show-500px">
+      <div class="">Aparece en 500px</div>
+    </div>
+    <div class="outerBox cambio-500px">
+      <div class="">Cambia en 500px Cambia en 500px Cambia en 500px</div>
+    </div>
+  </section>
+</body>
+
+</html>

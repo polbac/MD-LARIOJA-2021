@@ -1,0 +1,261 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #262626;
+  --card-bg-color: #ffffff;
+  --title-color: #111;
+  --text-color-small-card: #777;
+  --text-color-large-card: #474747;
+  --label-color: #ff7a18;
+  --embebed-text-color: #0089c7;
+  --ff: MD Primer Bold, Rubik, Lato, Lucida Grande, Lucida Sans Unicode, Tahoma,
+    Sans-Serif;
+}
+
+body {
+  display: block;
+  justify-content: center;
+  background-color: var(--bg-color);
+  font-family: var(--ff);
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  margin: auto;
+}
+
+.small-card {
+  background-color: var(--card-bg-color);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  height: auto;
+}
+
+.small-card img {
+  width: 75px;
+  height: auto;
+  border-radius: 3px;
+}
+
+.small-card h3 {
+  color: var(--title-color);
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.small-card p {
+  color: var(--text-color-small-card);
+  font-family: sans-serif;
+  font-weight: light;
+  font-size: 0.7rem;
+  margin: 0 0 15px 0;
+}
+
+.big-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.big-card__img {
+  transform: translateY(10px);
+  z-index: 5;
+}
+
+.big-card__img img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.big-card__content {
+  background-color: var(--card-bg-color);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.big-card__content {
+  padding: 20px;
+}
+
+/* Pseudo selector */
+/* .big-card__content div:nth-child(1) {
+  border: 4px solid red;
+} */
+
+/* selector direct children */
+.big-card__content .header > label {
+  color: var(--label-color);
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.big-card__content .header > h3 {
+  color: var(--title-color);
+  font-size: 24px;
+  font-weight: bold;
+  margin: 6px 0 10px 0;
+}
+
+.big-card__content > div.content {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.big-card__content > div.content span {
+  color: var(--embebed-text-color);
+  font-weight: 400;
+}
+
+.big-card__content .footer {
+  display: flex;
+  align-items: center;
+}
+
+.big-card__content .footer .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 10px 0 0;
+}
+
+.big-card__content .footer .avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.big-card__content .footer > h5 {
+  font-weight: 300;
+}
+
+.big-card__content .footer > h5 > span {
+  font-weight: 400;
+}
+
+@media (min-width: 574px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+
+  div.main-wrapper {
+    display: flex;
+    gap: 20px;
+  }
+
+  .small-card,
+  .big-card {
+    width: 400px;
+  }
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .first-card {
+    position: relative;
+    top: 0px;
+    left: 25px;
+  }
+
+  .small-card__title {
+    position: absolute;
+    right: 25px;
+  }
+
+  .second-card {
+    position: relative;
+    top: 10 px;
+  }
+
+  .wrapper {
+    width: 100%;
+    margin: 0;
+  }
+  .small-card {
+    height: 220px;
+  }
+}
+
+.big-card__content {
+  position: relative;
+}
+
+a.btn-close {
+  z-index: 5;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -170px;
+  right: 15px;
+  font-weight: bold;
+  background-color: #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+a.btn-close:hover {
+  background-color: green;
+}
+
+a.btn-close:active {
+  /*   background-color: green; */
+}
+
+a.visitado:visited {
+  /*   color: green; */
+}
+
+/* Pseudo elementos */
+
+/* ::after y ::before */
+
+.otherClass {
+  position: relative;
+}
+
+.otherClass::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  right: 50px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 10px 0 10px;
+  border-color: #ffffff transparent transparent transparent;
+}
+
+.otherClass::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 10px 0;
+  border-color: #501111 transparent transparent transparent;
+}
