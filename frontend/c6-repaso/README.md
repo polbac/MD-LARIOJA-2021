@@ -7,3 +7,11 @@
 ## JS
 
 ### Ejercitacion JS
+
+## metodologias agiles
+
+SCRUM
+
+    Sprint
+
+    mvp > minimun viable product
