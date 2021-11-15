@@ -1,24 +1,16 @@
 const express = require('express')
 const productsJSON = require('./products.json')
 const app = express()
+
 const PORT = 3000
-/* 
-1) Definir una ruta que sea /products
-2) Definir una ruta '/products/:id' que nos devuelva el objecto que represente al :id
-/products/jenlooper-cactus
-/products/jenlooper-lightshow
-*/
+
+app.use(express.urlencoded());
+app.use(express.json()); 
+
 // definimos rutas
 app.get('/products', (req, res) => {
     res.send(productsJSON)
 })
-
-app.post('/products', (req, res) => {
-    const { Id, Title, Description} = req.body
-    console.log(123)
-    res.send(productsJSON)
-})
-
 
 app.get('/products/:id', (req, res)=>{
     const id = req.params.id;
