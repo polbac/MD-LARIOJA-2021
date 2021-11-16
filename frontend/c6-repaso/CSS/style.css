@@ -1,0 +1,146 @@
+/* Normalizacion */
+h3 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+/* Helpers */
+.mr-20 {
+  margin-right: 20px !important;
+}
+
+.no-show {
+  display: none !important;
+}
+
+/* Estilos */
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgb(9 25 38 / 37%);
+}
+
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.title {
+  background: #ffff;
+  padding: 5px;
+  border-radius: 3px;
+  outline: 1px solid coral;
+}
+/* Box Model */
+.outerBox {
+  padding: 0;
+  margin: 0;
+  border: 1px solid rgb(194, 192, 192);
+  background-color: #ffffff;
+}
+
+.box-model {
+  margin: 30px;
+  padding: 15px;
+  border: 1px solid rgb(66, 65, 65);
+  position: relative;
+}
+
+.paddingRef {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 10px;
+}
+.box-model .content {
+  background-color: #f00;
+}
+
+/* Box Sizing */
+
+.caja {
+  margin: 30px;
+  padding: 15px;
+  height: auto;
+  width: 60px;
+  border: 1px solid rgb(66, 65, 65);
+}
+
+.content-box {
+  /* default prop */
+  box-sizing: content-box;
+}
+
+.border-box {
+  box-sizing: border-box;
+}
+
+/* Tamaños */
+
+.width-300 {
+  width: 300px;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.min-width {
+  min-width: 200px;
+}
+
+.fit-content {
+  width: fit-content;
+}
+
+.height-300 {
+  display: flex;
+  align-items: center;
+  height: 300px;
+}
+
+/* Media queries */
+
+.before-500px {
+  background-color: aliceblue;
+}
+
+.show-500px {
+  display: none;
+  height: 20px;
+  background-color: #ad6b6b;
+}
+
+.cambio-500px {
+  width: 150px;
+  height: 25px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Estilos aplicados hasta los 500px */
+
+@media (max-width: 500px) {
+  .cambio-500px {
+    white-space: nowrap;
+  }
+}
+
+/* Estilos que se aplicaran en los 500px */
+@media (min-width: 500px) {
+  .show-500px {
+    display: block;
+  }
+  .before-500px {
+    display: none;
+  }
+  .cambio-500px {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    height: auto;
+    width: 25vw;
+    overflow: visible;
+    word-break: break-all;
+  }
+}
