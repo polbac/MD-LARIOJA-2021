@@ -1,7 +1,3 @@
-Selección y modificación de componentes por medio de ID, tags y clases
-
-Creación de una página sencilla (titulo, parrafos, imágenes) mediante el uso del JS
-
 # DOM \_ Document Object Model
 
 <img src='./dom.jpg' width='400px'>
@@ -16,7 +12,7 @@ Documentacion: https://dom.spec.whatwg.org/
 
 ## Como hacemos eso?
 
-##  Etiqueta script
+## Etiqueta script
 
     Agregaremos la etiqueta <script> a nuestro HTML.
 
@@ -47,13 +43,13 @@ Documentacion: https://dom.spec.whatwg.org/
 
   NOTA: Esta ejecución nos devolverá el primer elemento encontrado
 
-    Utilizaremos para seleccionar todos los elementos:
+  Utilizaremos para seleccionar todos los elementos:
 
         document.querySelectorAll('elementoASeleccionar')
 
-    Esto nos devolverá una lista de nodos *NodeList*, no es un array, pero podremos loopear a traves de ellos.
+  Esto nos devolverá una lista de nodos _NodeList_, no es un array, pero podremos loopear a traves de ellos.
 
-    *NO PODREMOS* utilizar metodos como push(), pop()
+  _NO PODREMOS_ utilizar metodos como push(), pop()
 
   A saber: hay otros selectores como `getElementById`, pero utilizaremos el querySelector que es más universal.
 
@@ -65,8 +61,8 @@ Documentacion: https://dom.spec.whatwg.org/
         myImage.src = 'http://pathANuestraImagen'
 
 - Podemos agregar atributos
-        const myButton = document.querySelector('.myButtonClass')
-        myButton.setAttribute("disabled")
+  const myButton = document.querySelector('.myButtonClass')
+  myButton.setAttribute("disabled")
 
 - Podemos remover atributos
 
@@ -77,31 +73,31 @@ Documentacion: https://dom.spec.whatwg.org/
         myButton.style.color = "red";
         myButton.style.backgroundColor = "salmon";
 
-- Podemos agregar y remover clases: 
+- Podemos agregar y remover clases:
 
         myButton.classList.add('warning');
         myButton.classList.remove('warning');
 
-    - Verificar si existen
+  - Verificar si existen
 
-        myButton.classList.contains('warning');
+    myButton.classList.contains('warning');
 
-    - Agregar/remover una clase
+  - Agregar/remover una clase
 
-        myButton.classList.toggle('warning')
+    myButton.classList.toggle('warning')
 
 - Podemos obtener el interior de un elemento HTML
 
         const miDiv = document.querySelector('div')
         const elContenidoDeUnDiv = miDiv.innerHTML
 
-    - Modificarlo tambien !
+  - Modificarlo tambien !
 
-        const elContenidoDeUnDiv = miDiv.innerHTML = "<div>hola<div>"
+    const elContenidoDeUnDiv = miDiv.innerHTML = "<div>hola<div>"
 
-    - O solo sus texto y mantener sus estilos !!
+  - O solo sus texto y mantener sus estilos !!
 
-        miDiv.innerText = 'nuevo string'
+    miDiv.innerText = 'nuevo string'
 
 - Podemos tambien crear elementos !!!
 
@@ -117,10 +113,9 @@ Documentacion: https://dom.spec.whatwg.org/
 
         body.appendChild(miNuevoDiv);
 
-    - NOTA: deberemos anexarselos a algo
+  - NOTA: deberemos anexarselos a algo
 
 ## DOCUMENTACION
-
 
 etiqueta script: https://developer.mozilla.org/es/docs/Web/SVG/Element/script
 querySelector: https://developer.mozilla.org/es/docs/Web/API/Document/querySelector
