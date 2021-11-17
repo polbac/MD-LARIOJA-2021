@@ -1,0 +1,22 @@
+div.btn {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.btn-anchor {
+  margin: 50px 0;
+  padding: 10px 25px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid rgb(108, 108, 231);
+}
+
+.btn-anchor:hover {
+  background-color: rgb(108, 108, 231);
+  border: none;
+}
+.warning {
+  background-color: red;
+}

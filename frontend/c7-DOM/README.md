@@ -24,7 +24,7 @@ Documentacion: https://dom.spec.whatwg.org/
 
     O hacer uso del atributo src :
 
-        <script src="miArchivo.js" />
+        <script src="miArchivo.js"><script>
 
     E importarla desde un archivo externo
     La misma puede ser agregada en el <head> o al final de nuestro archivo dentro del <body>
@@ -118,9 +118,15 @@ Documentacion: https://dom.spec.whatwg.org/
 ## DOCUMENTACION
 
 etiqueta script: https://developer.mozilla.org/es/docs/Web/SVG/Element/script
+
 querySelector: https://developer.mozilla.org/es/docs/Web/API/Document/querySelector
+
 querySelectorAll: https://developer.mozilla.org/es/docs/Web/API/Document/querySelectorAll
+
 style: https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style
+
 classList: https://developer.mozilla.org/es/docs/Web/API/Element/classList
+
 innerHTML: https://developer.mozilla.org/es/docs/Web/API/Element/innerHTML
+
 innerText: https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText
