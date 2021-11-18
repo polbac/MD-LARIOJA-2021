@@ -6,21 +6,21 @@
  * 2) Descomentar la funcionalidad de getBoundingClientRect() para verificar una forma de uso
  */
 window.addEventListener('scroll', () => {
-    // console.log('scrolling...');
+    console.log('scrolling...');
 
 
-    const premium = document.querySelector('.premium');
+    const premiumDom = document.querySelector('.premium');
 
     /**
      * Este método te da el tamaño de un elemento y su ubicación respecto a la ubicación actual
      * Docs: https://developer.mozilla.org/es/docs/Web/API/Element/getBoundingClientRect
      */
-    /*     const ubicacion = premium.getBoundingClientRect();
-        // console.log(ubicacion);
+        const ubicacion = premiumDom.getBoundingClientRect();
+        console.log(ubicacion);
     
         if (ubicacion.top < 100) {
             console.log('Ya esta visible');
         } else {
             console.log('Aún no esta visible..')
-        } */
+        }
 })

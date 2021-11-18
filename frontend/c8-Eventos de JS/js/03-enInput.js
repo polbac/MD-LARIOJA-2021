@@ -6,9 +6,9 @@
  * Recordemos volver a comentarlas para no tener una consola plagada de información ilegible, aprendiendo a utilizar el console.log a conciencia
  */
 
-const busqueda = document.querySelector('.busqueda');
+const busquedaDom = document.querySelector('.busqueda');
 
-busqueda.addEventListener('input', leerInput);
+busquedaDom.addEventListener('input', leerInput);
 
 /**
  * event > Toda la información del evento
@@ -17,8 +17,8 @@ busqueda.addEventListener('input', leerInput);
  * event.target.value > Valor del input
  */
 function leerInput(event) {
-    // console.log(event);
-    // console.log(event.type);
-    // console.log(event.target);
+    console.log(event);
+    console.log(event.type);
+    console.log(event.target);
     console.log(event.target.value)
 }

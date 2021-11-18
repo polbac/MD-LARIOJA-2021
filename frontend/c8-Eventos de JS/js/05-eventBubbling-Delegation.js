@@ -7,19 +7,20 @@ const cardDiv = document.querySelector('.card');
 const infoDiv = document.querySelector('.info');
 const titulo = document.querySelector('.titulo');
 
-cardDiv.addEventListener('click', e => {
-    //    e.stopPropagation();
+
+/* cardDiv.addEventListener('click', e => {
+    e.stopPropagation();
     console.log('click card');
 })
 infoDiv.addEventListener('click', e => {
-    //    e.stopPropagation();
+    e.stopPropagation();
     console.log('click info');
 })
 
 titulo.addEventListener('click', e => {
-    //    e.stopPropagation();
+    e.stopPropagation();
     console.log('click titulo');
-})
+}) */
 
 
 /*
@@ -27,14 +28,15 @@ titulo.addEventListener('click', e => {
  * Comentar el event bubbling y descomentar el event delegation
 */
 
-/* cardDiv.addEventListener('click', e => {
+cardDiv.addEventListener('click', e => {
+    debugger
     if (e.target.classList.contains('titulo')) {
         console.log('click titulo');
     }
     if (e.target.classList.contains('info')) {
         console.log('click info');
     }
-}); */
+}); 
 
 /**
  * Otra forma de evitar el bubbling es agregar un listener al padre y seleccionar al hijo donde queremos que se ejecute dicha acción
