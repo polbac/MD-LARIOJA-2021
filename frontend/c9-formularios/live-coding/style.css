@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 50%;
+  margin: 0 auto;
+}
+
+input:focus {
+  outline: none;
+}
+h2 {
+  text-align: center;
+  padding: 15px 0;
+  color: blueviolet;
+}
+form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 1px solid rgb(118, 154, 212);
+  padding: 0 10px;
+}
+
+input:hover {
+  background-color: rgba(173, 169, 169, 0.1);
+}
+
+input[type="submit"] {
+  width: 350px;
+  border-radius: 15px;
+  border: none;
+}
