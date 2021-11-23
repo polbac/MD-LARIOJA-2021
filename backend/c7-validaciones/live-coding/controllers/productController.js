@@ -1,5 +1,5 @@
 const fs = require('fs') // file system
-const productsJSON = require('./products.json')
+const productsJSON = require('../products.json')
 
 module.exports.getProducts = (req, res) => {
     res.send(productsJSON)
