@@ -1,7 +1,8 @@
-# POST
+# Validaciones
 
-- Crear entidades
-- JSON: parse() y stringify()
+- Libreria JOI
+- Crear un Esquema
+- Utilizar un esquema en un controller
 
 ## Configuracion
 
