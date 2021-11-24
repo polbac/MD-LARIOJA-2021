@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="./index.js"></script>
+    <title>Formularios</title>
+  </head>
+  <body>
+    <h2>Crear Usuario</h2>
+    <form action="https://algunUrl.com/create" method="POST" class="form">
+      <label for="nombre">Nombre:</label>
+      <input type="text" name="nombre" id="nombre" class="nombre" required />
+      <label class="labelName"></label>
+      <br />
+      <label for="apellido">Apellido:</label>
+      <input type="text" name="apellido" id="apellido" class="apellido" />
+      <br />
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" class="email" />
+      <br />
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" class="password" />
+      <br />
+      <label for="terminos">Acepto los terminos y condiciones:</label>
+      <input type="checkbox" name="terminos" id="terminos" class="terminos" />
+      <br />
+      <input type="submit" value="Enviar" class="submit" />
+      <div class="div">hola</div>
+    </form>
+  </body>
+</html>
