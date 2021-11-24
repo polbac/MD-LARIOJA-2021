@@ -12,6 +12,7 @@ app.use(express.json());
 app.get('/products', productController.getProducts)
 app.get('/products/:id', productController.getProductDetail)
 app.post('/products', productController.createProduct)
+app.put('/products/:id', productController.updateProduct)
 
 app.listen(PORT, () => {
     console.log(`Aplicación express corriendo en el puerto ${PORT}`)
