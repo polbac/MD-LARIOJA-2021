@@ -117,7 +117,22 @@ const hideError = (elemento, label) => {
     label.innerHTML = ""
 }
 
+const clearValue = (object, key) => {
+    return {
+        ...object,
+        key: ""
+    }
+}
+
 /*-----------------------VALIDACIONES-----------------------*/
+
+let valoresDelFormulario = {
+    nombre: "",
+    apellido: "",
+    email: "",
+    password: "",
+    checkbox: false
+}
 
 nombre.addEventListener("input", (event) => {
     const value = event.target.value
@@ -128,7 +143,9 @@ nombre.addEventListener("input", (event) => {
 
     if (minLength && !numberFlag && !symbolFlag && maxLength) {
         hideError(nombre, labelName)
+        valoresDelFormulario.nombre = value
     } else {
+        if (valoresDelFormulario.nombre !== "") clearValue(valoresDelFormulario, nombre)
         showError(nombre)
         if (!minLength) {
             renderMyError(labelName, "El nombre debe tener un mínimo de 2 caracteres")
@@ -149,8 +166,10 @@ apellido.addEventListener("input", (event) => {
 
     if (minLength && !numberFlag && !symbolFlag && maxLength) {
         hideError(apellido, labelApellido)
+        valoresDelFormulario.apellido = value
     } else {
         showError(apellido)
+        if (valoresDelFormulario.apellido !== "") clearValue(valoresDelFormulario, apellido)
         if (!minLength) {
             renderMyError(labelApellido, "El apellido debe tener un mínimo de 2 caracteres")
         } else if (numberFlag) {
@@ -169,8 +188,10 @@ email.addEventListener("input", (event) => {
 
     if (value.includes("@") && value.includes(".") && maxLength) {
         hideError(email, labelEmail)
+        valoresDelFormulario.email = value
     } else {
         showError(email)
+        if (valoresDelFormulario.email !== "") clearValue(valoresDelFormulario, email)
         if (!value.includes("@") || !value.includes(".")) {
             renderMyError(labelEmail, "Ingresa un email válido")
         } else if (!maxLength) {
@@ -184,8 +205,10 @@ password.addEventListener("input", (event) => {
     const { minLength, maxLength } = validateLength(value, 8, 30)
     if (minLength && maxLength) {
         hideError(password, labelPassword)
+        valoresDelFormulario.password = value
     } else {
         showError(password)
+        if (valoresDelFormulario.password !== "") clearValue(valoresDelFormulario, password)
         if (!minLength) {
             renderMyError(labelPassword, "La contraseña debe tener un mínimo de 8 caracteres")
         } else if (!maxLength) {
@@ -196,13 +219,13 @@ password.addEventListener("input", (event) => {
 
 form.addEventListener("submit", (event) => {
     event.preventDefault()
-    console.log(event.target.value)
     if (!checkbox.checked) {
         showError(checkbox)
         renderMyError(labelCheckbox, "Debes aceptar los términos y condiciones")
     } else {
         hideError(checkbox, labelCheckbox)
+        valoresDelFormulario.checkbox = true
         /* form.submit() */
-        console.log("submiteando")
+        console.log("submiteando", valoresDelFormulario)
     }
 })
