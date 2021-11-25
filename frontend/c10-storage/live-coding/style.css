@@ -4,6 +4,7 @@ html,body{
 
 body.dark{
     background: black;
+    color: white;
 }
 
 button.dark{
