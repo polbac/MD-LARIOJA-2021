@@ -9,25 +9,48 @@
   </head>
   <body>
     <h2>Crear Usuario</h2>
-    <form action="https://algunUrl.com/create" method="POST" class="form">
+    <form
+      action="https://algunUrl.com/create"
+      method="POST"
+      class="form"
+      autocomplete="off"
+    >
       <label for="nombre">Nombre:</label>
       <input type="text" name="nombre" id="nombre" class="nombre" required />
-      <label class="labelName"></label>
+      <div class="labelName"></div>
       <br />
       <label for="apellido">Apellido:</label>
-      <input type="text" name="apellido" id="apellido" class="apellido" />
+      <input
+        type="text"
+        name="apellido"
+        id="apellido"
+        class="apellido"
+        required
+      />
+      <div class="labelApellido"></div>
       <br />
       <label for="email">Email:</label>
-      <input type="email" name="email" id="email" class="email" />
+      <input type="email" name="email" id="email" class="email" required />
+      <div class="labelEmail"></div>
       <br />
       <label for="password">Password:</label>
-      <input type="password" name="password" id="password" class="password" />
+      <input
+        type="password"
+        name="password"
+        id="password"
+        class="password"
+        required
+      />
+      <div class="labelPassword"></div>
       <br />
-      <label for="terminos">Acepto los terminos y condiciones:</label>
-      <input type="checkbox" name="terminos" id="terminos" class="terminos" />
+      <label class="checkbox">
+        <input type="checkbox" name="terminos" id="terminos" class="terminos" />
+        <span></span>
+        <span>Acepto los terminos y condiciones</span>
+      </label>
+      <div class="labelCheckbox"></div>
       <br />
       <input type="submit" value="Enviar" class="submit" />
-      <div class="div">hola</div>
     </form>
   </body>
 </html>
