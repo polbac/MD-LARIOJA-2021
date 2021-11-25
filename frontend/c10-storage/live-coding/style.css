@@ -1,0 +1,25 @@
+html,body{
+    font-family: 'Space Mono', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body.dark{
+    background: black;
+}
+
+button.dark{
+    color: black;
+    color: white;
+}
+
+article{
+    width: fit-content;
+    background-color: coral;
+    padding: 10px;
+}
+
+button{
+    color: white;
+    border: 0;
+    color: black;
+    font-family: 'Space Mono', Tahoma, Geneva, Verdana, sans-serif;
+}
