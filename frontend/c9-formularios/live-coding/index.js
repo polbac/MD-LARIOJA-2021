@@ -185,7 +185,6 @@ apellido.addEventListener("input", (event) => {
 email.addEventListener("input", (event) => {
     const value = event.target.value
     const { maxLength } = validateLength(value, 1, 30)
-
     if (value.includes("@") && value.includes(".") && maxLength) {
         hideError(email, labelEmail)
         valoresDelFormulario.email = value
@@ -225,7 +224,8 @@ form.addEventListener("submit", (event) => {
     } else {
         hideError(checkbox, labelCheckbox)
         valoresDelFormulario.checkbox = true
-        /* form.submit() */
+
         console.log("submiteando", valoresDelFormulario)
+        localStorage.setItem("formulario", JSON.stringify(valoresDelFormulario))
     }
 })
