@@ -37,4 +37,4 @@ function applyTheme() {
 themeSwitchButton.addEventListener('click', toggleTheme)
 
 
-const miJSON = '[{"name":"Guitar Fender Stratocaster",price:1000},{"name":"Guitar Fender Telecaster",price:1500}]'
+const miJSON = '[{"name":"Guitar Fender Stratocaster","price":1000},{"name":"Guitar Fender Telecaster","price":1500}]'
