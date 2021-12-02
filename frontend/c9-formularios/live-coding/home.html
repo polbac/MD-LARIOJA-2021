@@ -4,41 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script defer src="./index.js"></script>
+    <script defer src="./scripts/buttons.js"></script>
+    <script defer src="./scripts/utils.js"></script>
+    <script defer src="./scripts/registerRender.js"></script>
+    <!--     <script defer src="./scripts/index.js"></script>
+    <script defer src="./scripts/loginRender.js"></script> -->
+    <script defer src="./scripts/registerValidation.js"></script>
+    <script defer src="./scripts/loginValidation.js"></script>
     <title>Formularios</title>
   </head>
   <body>
-    <h2>Crear Usuario</h2>
-    <form
-      action="https://algunUrl.com/create"
-      method="POST"
-      class="form"
-      autocomplete="off"
-    >
-      <label for="nombre">Nombre:</label>
-      <input type="text" name="nombre" id="nombre" class="nombre" />
-      <div class="labelName"></div>
-      <br />
-      <label for="apellido">Apellido:</label>
-      <input type="text" name="apellido" id="apellido" class="apellido" />
-      <div class="labelApellido"></div>
-      <br />
-      <label for="email">Email:</label>
-      <input type="email" name="email" id="email" class="email" />
-      <div class="labelEmail"></div>
-      <br />
-      <label for="password">Password:</label>
-      <input type="password" name="password" id="password" class="password" />
-      <div class="labelPassword"></div>
-      <br />
-      <label class="checkbox">
-        <input type="checkbox" name="terminos" id="terminos" class="terminos" />
-        <span></span>
-        <span>Acepto los terminos y condiciones</span>
-      </label>
-      <div class="labelCheckbox"></div>
-      <br />
-      <input type="submit" value="Enviar" class="submit" />
-    </form>
+    <header>
+      <nav>
+        <div class="logo"></div>
+        <div class="buttons">
+          <a href="#" class="registro btn-nav"> Registrarse </a>
+          <a href="#" class="login btn-nav"> Ingresar </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="form register-form"></section>
+
+      <section class="form login-form">
+        <h2>Ingresar</h2>
+        <form
+          action="https://algunUrl.com/create"
+          method="POST"
+          class="form"
+          autocomplete="off"
+        >
+          <input
+            type="email"
+            name="email-login"
+            id="email-login"
+            class="email-login"
+            placeholder="Correo Electrónico"
+          />
+          <div class="labelEmail"></div>
+          <br />
+          <input
+            type="password"
+            name="password-login"
+            id="password-login"
+            class="password-login"
+            placeholder="Contraseña"
+          />
+          <div class="labelPassword"></div>
+          <input type="submit" value="Enviar" class="submit" />
+        </form>
+      </section>
+    </main>
   </body>
 </html>
