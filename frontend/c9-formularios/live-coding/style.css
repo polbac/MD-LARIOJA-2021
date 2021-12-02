@@ -2,19 +2,130 @@
   padding: 0;
   margin: 0;
 }
+
+:root {
+  --color-primary: rgb(159, 74, 238);
+  --color-secondary: #fafafa;
+  --color-tertiary: #fafafa;
+  --color-quaternary: #fafafa;
+  --color-quinary: #fafafa;
+  --color-senary: #fafafa;
+}
 body {
-  width: 50%;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+  margin: 10px 0;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 16px;
+  height: 16px;
+  margin-left: 15px;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  margin-right: 15px;
+}
+
+.btn-nav {
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+  padding: 5px 25px;
+  background-color: none;
+  border: 1px solid var(--color-primary);
+  border-radius: 10px;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.btn-nav:hover {
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+  background-color: var(--color-primary);
+  color: white;
+  transition: background-color 0.5s;
+}
+
+section.form {
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   margin: 0 auto;
+  display: none;
+  border-radius: 10px;
+  background-color: rgb(246, 246, 246);
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
 }
 
 input:focus {
   outline: none;
 }
+
 h2 {
+  user-select: none;
   text-align: center;
   padding: 15px 0;
-  color: blueviolet;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  letter-spacing: 1px;
+  position: relative;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
+
+h2::after {
+  content: "";
+  position: absolute;
+  background-color: var(--color-primary);
+  width: 25%;
+  height: 3px;
+  top: 85%;
+  left: 38%;
+  animation: vibrate 2s ease-in-out;
+}
+
+@keyframes vibrate {
+  0% {
+    transform: rotateX(10deg) rotateY(10deg);
+  }
+  20% {
+    transform: rotateX(-10deg) rotateY(0deg);
+  }
+  45% {
+    transform: rotateX(0deg) rotateY(10deg);
+  }
+  68% {
+    transform: rotateX(0deg) rotateY(-10deg);
+  }
+  82% {
+    transform: rotateX(10deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(10deg) rotateY(10deg);
+  }
+}
+
 form {
   width: 100%;
   height: 100%;
@@ -30,11 +141,12 @@ label {
 }
 
 input {
-  width: 100%;
+  width: 80%;
   height: 40px;
   border: none;
-  border-bottom: 1px solid rgb(118, 154, 212);
+  border-bottom: 1px solid var(--color-primary);
   padding: 0 10px;
+  background-color: transparent;
 }
 
 input:hover {
@@ -45,6 +157,13 @@ input[type="submit"] {
   width: 350px;
   border-radius: 15px;
   border: none;
+  outline: 1px solid var(--color-primary);
+}
+
+input[type="submit"]:hover {
+  background-color: var(--color-primary);
+  color: white;
+  transition: background-color 0.5s;
 }
 
 /* errores */
