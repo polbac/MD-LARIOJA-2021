@@ -17,7 +17,7 @@ Clase:
 
 [Hooks](./03-Hooks.md)
 
-[Estados](./04-useState.md) + live coding
+[Estados](./04-ueState.md) + live coding
 
 Mención [Class Components](./05-Class-Components.md)
 
@@ -28,5 +28,5 @@ Mención [Class Components](./05-Class-Components.md)
     - Crear un componente que muestre un contador con dos botones (sumar y restar)
     - Sostener en un estado el contador del usuario
 
-    NOTA: Usaremos el hook useState para sostener el estado del componente.
+    NOTA: Usaremos el hook ueState para sostener el estado del componente.
     NOTA: En clase podemos realizar el ejercicio en un solo componente (archivo), y posteriormente componetizarlo.
