@@ -19,8 +19,9 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'Todo',
-    timestamps: false,
+    timestamps: true,
     tableName: 'todo',
+    paranoid: true, // habilitamos soft delete
   });
   return Todo;
 };
