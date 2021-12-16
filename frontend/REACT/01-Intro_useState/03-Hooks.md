@@ -9,6 +9,6 @@ Veremos varios Hooks, el principal es el [useState](./04-useState), que nos perm
 Los hooks tienen [reglas de uso](https://es.reactjs.org/docs/hooks-rules.html), por lo que debemos tener cuidado con el uso de ellos.
 Su nombre siempre comienza con use, y seguido de una palabra clave que indica el tipo de hook.
 
-También podemos tener hooks personalizados!!
+También podemos tener hooks personalizados!
 
 [Docs](https://es.reactjs.org/docs/hooks-intro.html)
