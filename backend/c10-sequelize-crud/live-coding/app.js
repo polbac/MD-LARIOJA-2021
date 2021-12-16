@@ -15,4 +15,6 @@ app.post('/todo', todoController.create)
 app.put('/todo/:id', todoController.update)
 app.delete('/todo/:id', todoController.delete)
 
+// Crear las rutas de Registro y Login
+
 app.listen(PORT, () => console.log(`servidor corriendo en el puerto ${PORT}`))
