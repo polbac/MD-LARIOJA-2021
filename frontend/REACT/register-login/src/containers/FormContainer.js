@@ -84,9 +84,29 @@ export default function FormContainer({ isRegister, handleClose }) {
   const handleOnClick = (event) => {
     event.preventDefault();
     event.stopPropagation();
-    console.log("form values", formValues);
-    handleClose();
+
+    createUser(formValues)
   };
+
+  const createUser = (data) => {
+
+    const { nombre, apellido, email, password, edad } = data
+
+      fetch('http://localhost:4000/users', {
+      method: 'POST',
+      body: JSON.stringify({
+        nombre,
+        apellido,
+        email,
+        password,
+        edad,
+      }),
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+      },
+    }).then((response) => response.json()).then((json) => console.log(json));
+
+  }
 
   return (
     <Form>

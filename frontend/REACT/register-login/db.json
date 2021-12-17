@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "nombre": "Pedro",
+      "apellido": "Sanches",
+      "email": "",
+      "password": "",
+      "edad": ""
+    },
+    {
+      "id": 2,
+      "nombre": "John",
+      "apellido": "Bonachon",
+      "email": "",
+      "password": "",
+      "edad": ""
+    },
+    {
+      "nombre": "Elzal",
+      "apellido": "Chichon",
+      "email": "elsalchichon@gmail.com",
+      "password": "asdasd",
+      "edad": "98",
+      "id": 3
+    },
+    {
+      "nombre": "Elca",
+      "apellido": "Maron",
+      "email": "elcamaron@yahoo.com.ar",
+      "password": "soyunca",
+      "edad": "",
+      "id": 4
+    }
+  ]
+}
