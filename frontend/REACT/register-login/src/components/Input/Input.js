@@ -1,4 +1,9 @@
 import React, { useState } from "react";
+import {
+  validateLength,
+  validateEmail,
+  validatePassword,
+} from "../../utils/validations";
 
 export const Input = ({ inputField, handleChange }) => {
   const errorInitialValue = {
@@ -17,71 +22,19 @@ export const Input = ({ inputField, handleChange }) => {
   const handleOnChange = ({ target }) => {
     const newValue = target.value;
     if (type === "text") {
-      if (newValue === "" || newValue.length > 10) {
-        setError({
-          showError: true,
-          msg: "Llena más texto",
-        });
-      } else {
-        setError(errorInitialValue);
-        handleChange(target.name, newValue);
-      }
+      const error = validateLength(newValue, 1, 25);
+      setError(error);
     } else if (type === "number") {
-      newValue > 0
-        ? setError(errorInitialValue)
-        : setError({
-            showError: true,
-            msg: "Llena más texto",
-          });
+      const error = validateLength(newValue, 1, 99);
+      setError(error);
     } else if (type === "email") {
-      if (newValue.includes("@")) {
-        const valueArray = newValue.split("@");
-        // if sobre un string vacio ("") === falso , if sobre un string con cosas ("asdasd") === verdadero
-        if (valueArray[0]) {
-          setError(errorInitialValue);
-        } else {
-          setError({
-            showError: true,
-            msg: "Llena más texto",
-          });
-        }
-        // doble signo de exclamación > obtengo booleano de el string, si es un string vacio ("") === falso, si tiene data ("asdasd") === verdadero
-        if (!!valueArray[1]) {
-          if (valueArray.includes(".")) {
-            // TODO: revisar porque no se incluye el punto
-            const newArray = valueArray.split(".");
-            if (!!newArray[1]) {
-              setError(errorInitialValue);
-            } else {
-              setError({
-                showError: true,
-                msg: "Llena más texto",
-              });
-            }
-          }
-          setError(errorInitialValue);
-        } else {
-          setError({
-            showError: true,
-            msg: "Llena más texto",
-          });
-        }
-      } else {
-        setError({
-          showError: true,
-          msg: "Llena más texto",
-        });
-      }
+      const error = validateEmail(newValue);
+      setError(error);
     } else if (type === "password") {
-      if (!!newValue && newValue.length < 8) {
-        setError(errorInitialValue);
-      } else {
-        setError({
-          showError: true,
-          msg: "Llena más texto",
-        });
-      }
+      const error = validatePassword(newValue);
+      setError(error);
     }
+    !error.showError && handleChange(target.name, newValue);
   };
 
   return (
